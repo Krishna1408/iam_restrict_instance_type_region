@@ -1,2 +1,4 @@
 # iam_restrict_instance_type_region
-Iam policies to restrict the instances by type and region
+This policies will be useful to save cost and restrict access for the users.
+
+
