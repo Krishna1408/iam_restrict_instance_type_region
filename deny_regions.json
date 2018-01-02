@@ -1,0 +1,24 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": "ec2:*",
+            "Sid": "Users cannot perform any actions in the regions mentioned below",
+            "Effect": "Deny",
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "ec2:Region": [
+                        "us-east-1",
+                        "us-west-1",
+                        "us-west-2",
+                        "ap-south-1",
+                        "ap-southeast-1",
+                        "ap-northeast-2",
+                        "sa-east-1"
+                    ]
+                }
+            }
+        }
+    ]
+}
